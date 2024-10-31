@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-color: rgb(204, 197, 197);
+}
+
+@media (max-width:768px) {
+    header{
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    .titulo-header{
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+        font-size: clamp(2em, 8vw, 6em);
+        color: rgb(83, 62, 62);
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .cont-img-header{
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 11;
+    }
+
+    .img-header{
+        width: 100%;
+        height: 100%;
+    }
+
+    .opciones{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        width: 90%;
+        height: 100%;
+        grid-column: 1 / span 4;
+        grid-row: 5 / span 4;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    .titulo-opciones{
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+        font-size: clamp(1.5em, 6vw, 3em);
+        color: rgb(83, 62, 62);
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .botones-opciones{
+        margin-top: 5%;
+    }
+
+    .boton-uno{
+        color: rgb(83, 62, 62);
+        width: 40vw;
+        height: 4vh;
+        background-color: white;
+        border: 1px solid black;
+        font-size: clamp(0.4em, 3vw, 0.7em);
+    }
+
+    .boton-dos{
+        color: rgb(83, 62, 62);
+        width: 40vw;
+        height: 4vh;
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+        font-size: clamp(0.4em, 3vw, 0.7em);
+        }
+
+    .somos{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12,1fr);
+        background-color: rgb(43, 42, 42);
+    }
+
+    .titulo-somos{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        font-size: clamp(1.9em, 6vw, 4em);
+        text-align: center;
+        color: white;
+    }
+
+    .cont-parrafo-somos{
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 3;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: clamp(0.4em, 0.6vw, 0.3em);
+    }
+
+    .parrafo-somos{
+        color: white;
+        font-size: clamp(0.9em, 5vw, 4em);
+    }
+
+    .cont-img-somos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1 / span 2;
+        grid-row: 7 / span 6;
+    }
+
+    .img-somos{
+        width: 80%;
+        height: 90%;
+    }
+
+    .anuncios{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(15,1fr);
+        width: 90%;
+        margin-left: 5%;
+        height: 130vh;
+        background-color: white;
+    }
+
+    .list-menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .casa-one{
+        width:100%;
+    }
+
+
+    .img-casas{ 
+        width: 100%;
+        margin-top: 4%;
+    }
+
+
+    .titulo-anuncio{
+        margin-top: 4%;
+        grid-column: 1 / span 8;
+        grid-row: 1 / span 2;
+        text-align: center;
+        color:rgb(156, 134, 107)
+    }
+
+    .con-uno{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        border-top: 2px solid gray;
+        grid-column: 2 / span 6;
+        grid-row: 2 / span 5;
+    }
+
+    .casa-uno{
+        width: 100%;
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 2;
+    }
+
+    .titulo-casa-uno{
+        grid-column: 1 / span 6;
+        grid-row: 6;
+    }
+
+    subtitulo-casa-uno{
+        grid-column: 1 / span 6;
+        grid-row: 4;
+    }
+
+    p-casa-uno{
+        grid-column: 1 / span 6;
+        grid-row: 5;
+    }
+
+    .con-dos{
+        grid-column: 1 / span 8;
+        grid-row: 10;
+    }
+
+    .casa-dos{
+        width: 10%;
+    }
+
+    .con-tres{
+        grid-column: 1 / span 8;
+        grid-row: 12;
+    }
+
+    .casa-tres{
+        width: 10%;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        background-color: whitesmoke;
+        color: black;
+        padding: 1em;
+        border: 1px solid lightskyblue;
+    }
+
+}
+
+
+@media (min-width:769px) {
+    header{
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    .titulo-header{
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+        font-size: clamp(2em, 8vw, 6em);
+        color: rgb(83, 62, 62);
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .cont-img-header{
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 11;
+    }
+
+    .img-header{
+        width: 100%;
+        height: 100%;
+    }
+
+    .opciones{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        width: 90%;
+        height: 100%;
+        grid-column: 1 / span 4;
+        grid-row: 5 / span 4;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    .titulo-opciones{
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+        font-size: clamp(1.5em, 6vw, 3em);
+        color: rgb(83, 62, 62);
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .botones-opciones{
+        margin-top: 5%;
+    }
+
+    .boton-uno{
+        color: rgb(83, 62, 62);
+        width: 40vw;
+        height: 4vh;
+        background-color: white;
+        border: 1px solid black;
+        font-size: clamp(0.4em, 3vw, 0.7em);
+    }
+
+    .boton-dos{
+        color: rgb(83, 62, 62);
+        width: 40vw;
+        height: 4vh;
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+        font-size: clamp(0.4em, 3vw, 0.7em);
+        }
+
+    .somos{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12,1fr);
+        background-color: rgb(43, 42, 42);
+    }
+
+    .titulo-somos{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        font-size: clamp(1.9em, 6vw, 4em);
+        text-align: center;
+        color: white;
+    }
+
+    .cont-parrafo-somos{
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 3;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: clamp(0.4em, 0.6vw, 0.3em);
+    }
+
+    .parrafo-somos{
+        color: white;
+        font-size: clamp(0.9em, 5vw, 4em);
+    }
+
+    .cont-img-somos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1 / span 2;
+        grid-row: 7 / span 6;
+    }
+
+    .img-somos{
+        width: 80%;
+        height: 90%;
+    }
+
+    .anuncios{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(15,1fr);
+        width: 90%;
+        margin-left: 5%;
+        height: 130vh;
+        background-color: white;
+    }
+
+    .list-menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .casa-one{
+        width:100%;
+    }
+
+
+    .img-casas{ 
+        width: 100%;
+        margin-top: 4%;
+    }
+
+
+    .titulo-anuncio{
+        margin-top: 4%;
+        grid-column: 1 / span 8;
+        grid-row: 1 / span 2;
+        text-align: center;
+        color:rgb(156, 134, 107)
+    }
+
+    .con-uno{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        border-top: 2px solid gray;
+        grid-column: 2 / span 6;
+        grid-row: 2 / span 5;
+    }
+
+    .casa-uno{
+        width: 100%;
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 2;
+    }
+
+    .titulo-casa-uno{
+        grid-column: 1 / span 6;
+        grid-row: 6;
+    }
+
+    subtitulo-casa-uno{
+        grid-column: 1 / span 6;
+        grid-row: 4;
+    }
+
+    p-casa-uno{
+        grid-column: 1 / span 6;
+        grid-row: 5;
+    }
+
+    .con-dos{
+        grid-column: 1 / span 8;
+        grid-row: 10;
+    }
+
+    .casa-dos{
+        width: 10%;
+    }
+
+    .con-tres{
+        grid-column: 1 / span 8;
+        grid-row: 12;
+    }
+
+    .casa-tres{
+        width: 10%;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        background-color: whitesmoke;
+        color: black;
+        padding: 1em;
+        border: 1px solid lightskyblue;
+    }
+
+}
